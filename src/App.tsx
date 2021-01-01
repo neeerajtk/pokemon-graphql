@@ -1,6 +1,7 @@
 import React from "react";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
+import { Pokemons } from "./containers/Pokemons";
 
 function App() {
   const client: any = new ApolloClient({
@@ -9,7 +10,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <main>
-        <p>pokemon</p>
+        <Pokemons />
       </main>
     </ApolloProvider>
   );
