@@ -1,0 +1,7 @@
+.pokemonSingle {
+  border: 1px solid black;
+  width: 500px;
+  margin: 5px;
+  background-color: rgb(71, 71, 71);
+  color: rgb(231, 231, 231);
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/pokemon.css";
 
 type pokemonType = {
   id: any;
@@ -16,12 +17,13 @@ interface Props {
 
 export default function Pokemon(props: Props) {
   return (
-    <div>
-      <p>Name: {props.pokemon.name}</p>
+    <div className="pokemonSingle">
       <p>
         {" "}
         <img src={props.pokemon.image} />
       </p>
+      <p>Name: {props.pokemon.name}</p>
+
       <p>Max HP: {props.pokemon.maxHP}</p>
       <p>Max CP: {props.pokemon.maxCP}</p>
     </div>
