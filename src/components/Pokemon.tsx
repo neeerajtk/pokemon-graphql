@@ -17,7 +17,13 @@ interface Props {
 export default function Pokemon(props: Props) {
   return (
     <div>
-      <p>{props.pokemon.name}</p>
+      <p>Name: {props.pokemon.name}</p>
+      <p>
+        {" "}
+        <img src={props.pokemon.image} />
+      </p>
+      <p>Max HP: {props.pokemon.maxHP}</p>
+      <p>Max CP: {props.pokemon.maxCP}</p>
     </div>
   );
 }
