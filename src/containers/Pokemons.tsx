@@ -10,9 +10,7 @@ export function Pokemons() {
   return (
     <div className="pokemons">
       {pokemons.map((pokemon: any) => (
-        <p>
-          <Pokemon pokemon={pokemon} />
-        </p>
+        <Pokemon pokemon={pokemon} id={pokemon.id} />
       ))}
     </div>
   );
